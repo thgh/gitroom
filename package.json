@@ -1,0 +1,25 @@
+{
+  "name": "gitroom",
+  "description": "Collaborate on a git branch by syncing your working directory",
+  "license": "MIT",
+  "version": "0.1.0",
+  "bin": {
+    "hitch": "gitroom.js",
+    "gitroom": "gitroom.js"
+  },
+  "dependencies": {
+    "cheap-watch": "^1.0.2",
+    "daemonize2": "^0.4.2",
+    "ignore": "^5.0.6",
+    "ws": "^6.2.1"
+  },
+  "author": "Thomas Ghysels <info@thomasg.be>",
+  "homepage": "https://github.com/thgh/gitroom",
+  "bugs": {
+    "url": "https://github.com/thgh/gitroom/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/thgh/gitroom"
+  }
+}

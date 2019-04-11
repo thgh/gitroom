@@ -1,0 +1,25 @@
+#!/usr/bin/env node --experimental-modules
+import { setup } from 'daemonize2'
+
+console.log('before start')
+const daemon = setup({
+    main: "gitroom.js",
+    name: "gitroom",
+    pidfile: "gitroom.pid"
+});
+
+switch (process.argv[2]) {
+
+    case "start":
+        daemon.start();
+        break;
+
+    case "stop":
+        daemon.stop();
+        break;
+
+    default:
+        console.log("Usage: [start|stop]");
+}
+
+console.log('after')
